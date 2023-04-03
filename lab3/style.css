@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html :lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta htttp-equvix="X-UA-Compatible" "IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Стили</title>
+
+<style>
+    body {
+        background: #000000;
+        color: rgb(252,252,252);
+    }
+    p {
+        text-align: right;
+    }
+    h1,h2{
+        text-align: right;
+        color: #ff0101;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    }
+    em{
+        font-style: italic;
+        color:green;
+        
+    }
+
+    </style>
+    </head>
