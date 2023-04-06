@@ -14,29 +14,29 @@
 <tbody>
 
     <tr>
-        <th>E-mail</th>
-        <th><input type="email"></th>
+        <th><label for="e-mail">E-mail</label></th>
+        <th><input id="e-mail" type="email"></th>
     </tr>
 
     <tr>
-        <th>Пароль</th>
-        <th><input type="password"></th>
+        <th><label for="pass">Пароль</label></th>
+        <th><input id="pass" type="password"></th>
     </tr>
     <tr>
         <th>Пол</th>
-        <th>  <input type="radio" name="status" value="man">Мужчина <input type="radio" name="status" value="woman">Женщина</th>
+        <th> <label> <input  type="radio" name="status" value="man"></label>Мужчина<label> <input type="radio" name="status" value="woman">Женщина</label></th>
     </tr>
     <tr>
         <th> Год рождения</th>
-        <th> <input type="date"> </th>
+        <th><label> <input type="date"> </label></th>
     </tr>
     <tr>
         <th>Я знаю</th>
-        <th><br><input type="checkbox" checked="" disabled="">Русский
-            <br><input type="checkbox">Немецкий
-            <br><input type="checkbox">Итальянский
-            <br><input type="checkbox">Английский
-            <br><input type="checkbox">Китайский </th>
+        <th><br><label><input type="checkbox" checked="" disabled="">Русский</label>
+            <br><label><input type="checkbox">Немецкий</label>
+            <br><label><input type="checkbox">Итальянский</label>
+            <br><label><input type="checkbox">Английский</label>
+            <br><label><input type="checkbox">Китайский</label> </th>
     </tr>
     <tr>
         <th>
@@ -46,6 +46,12 @@
             <textarea name="comment" placeholder="напиши коротко о себе" id="message"> </textarea>
         </th>
     </tr>
+    <tr>
+        <th></th>
+        <td><button type="submit">Готово</button>
+            <button type="reset">Очистить</button>
+        </td>
+        </tr>
     <tr>
         <th><button type="submit"> Отправить</button></th>
         
