@@ -10,22 +10,35 @@
     display: table;
     clear: both;
 }
-#left{
-    width: 200px;
-	background:#ccf;
-    float: left;
-}
-#right{
-    width: 20%;
-	background:#fcc;
-    float: right;
-}
-#center{
-
-	background:#cfc;
-    margin-right:21%;
-    margin-left: 210px;
-}
+.container{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px calc(1rem - 1px);
+    
+        
+    }
+    
+    #left{
+        background:#ccf;
+        width: 200px;
+        order: -1;
+            
+    }
+    #right{
+        background:#fcc;
+        width: 200px;
+        order: 0;
+        
+        
+            
+    }
+    #center{
+        background:#cfc;
+         width: 600px; 
+        order: -1;
+        
+    }
 </style>
 </head>
 <body>
