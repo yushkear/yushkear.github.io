@@ -4,51 +4,30 @@
 <meta charset="utf-8">
 <title>Главная страница</title>
 <link type="text/css" rel="stylesheet" href="css/main.css">
-<style type="text/css">
+<style>
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
-.container{
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px calc(1rem - 1px);
-    
-        
-    }
-    
-	body{
-    min-width: 1000px;
-    font-size: 0;
-    }
-div{
-    display: inline-block;
-    vertical-align: top;
+.left_part{
+	float:left;
+	background: #27dd88; /* Цвет фона */
+    padding: 20px; /* Поля */
+    border: 2px solid #ff761a; /* Параметры рамки */
+}
+.right_part{
+	float:right;
+	background: #af8bb9; /* Цвет фона */
+    padding: 20px; /* Поля */
+    border: 2px solid #ff761a; /* Параметры рамки */
+}
+.central_part{
+	background: #edf6ff; /* Цвет фона */
+    padding: 20px; /* Поля */
+    border: 2px solid #ff761a; /* Параметры рамки */
 }
 
-#left{
-	background:#ccf;
-    width: 200px;
-    font-size: 16px;
-    
-    
-}
-#right{
-	background:#fcc;
-    width: 200px;
-    font-size: 16px;
-  
-        
-}
-#center{
-	background:#cfc;
-    width: 600px;
-    font-size: 16px;
-    
-    
-}
 </style>
 </head>
 <body>
@@ -56,15 +35,15 @@ div{
 	<div id="header"></div>
 	<div id="outer">
 		<div id="inner">
-			<div id="left">
+			<div id="left_part">
 				<ul>
 					<li><a href="#">Камень</a></li>
 					<li><a href="#">Ножницы</a></li>
 					<li><a href="#">Бумага</a></li>
 				</ul>
 			</div>
-			<div id="right">right</div>
-			<div id="center">center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center</div>
+			<div id="right_part">right</div>
+			<div id="central_part">center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center</div>
 			<div id="end"></div>
 		</div>
 	</div>
