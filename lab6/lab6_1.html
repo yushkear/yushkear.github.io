@@ -1,97 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<title>Блочная вёрстка сайта</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
 <link type="text/css" rel="stylesheet" href="css/main.css">
 <style>
-	<style>
-        .clearfix::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        #container {
-            background: #ffffff;
-            width: 800px;
-            height: 400px;
-            margin: auto auto;
-            border: 10px solid #ffffff;
-
-        }
-
-        #header {
-            background: #adcdfc;
-            height: 100px;
-            border: 10px solid #ffffff;
-
-        }
-
-        #left {
-            background-image: url(left.png);
-            background: #e4ffef;
-            float: left;
-            height: 180px;
-            width: 200px;
-            border: 10px solid #ffffff;
-
-
-        }
-
-        #right {
-            background-image: url(right.png);
-            background: #c2f3ff;
-            float: right;
-            height: 180px;
-            width: 200px;
-            border: 10px solid #ffffff;
-
-
-        }
-
-        #center {
-            width: 600px;
-            background: #ffffff;
-            border: 10px solid #ffffff;
-            margin: 0 200px;
-
-        }
-
-        #footer {
-            background: #c4b7f8;
-            height: 100px;
-            border: 10px solid #ffffff;
-
-        }
-
-        li {
-            list-style-image: url(plus.png);
-        }
-
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
-.left_part{
-	float:left;
-	background: #27dd88; /* Цвет фона */
-    padding: 20px; /* Поля */
-    border: 2px solid #ff761a; /* Параметры рамки */
-}
-.right_part{
-	float:right;
-	background: #af8bb9; /* Цвет фона */
-    padding: 20px; /* Поля */
-    border: 2px solid #ff761a; /* Параметры рамки */
-}
-.central_part{
-	background: #edf6ff; /* Цвет фона */
-    padding: 20px; /* Поля */
-    border: 2px solid #ff761a; /* Параметры рамки */
-}
 
+#container{
+    background: #ffffff;
+    width: 800px;
+    height: 400px;
+    margin: auto auto;
+	border: 10px solid #ffffff;
+	
+}
+#header{
+	background: #adcdfc;
+	height: 100px;
+	border: 10px solid #ffffff;
+	
+}
+#left{
+    background-image: url(left.png);
+	float: left;
+	height: 180px;
+	width: 200px;
+	border: 10px solid #ffffff;
+	
+
+}
+#right{
+    background-image: url(right.png);
+	float: right;
+	height: 180px;
+	width: 200px;
+	border: 10px solid #ffffff;
+	
+
+}
+#center{
+	width: 600px;
+    background: #ffffff;
+	border: 10px solid #ffffff;
+	margin: 0 200px;
+
+}
+#footer{
+	background: #c4b7f8;
+	height: 100px;
+	border: 10px solid #ffffff;
+
+}
+li { 
+    list-style-image: url(plus.png); 
+} 
 </style>
 </head>
 <body>
