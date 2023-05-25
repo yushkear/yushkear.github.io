@@ -11,6 +11,9 @@
     "use strict";
     let gender = promt('Введите ваш пол');
     let age = promt('Введите ваш возраст');
+
+    if (age < 18) alert('Вам ещё учиться');
+    else if (age < 60 && gender('мужской')) alert('Вам ещё работать и работать');
     
   </script>
 
