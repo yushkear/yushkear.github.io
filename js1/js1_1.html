@@ -1,6 +1,29 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ru">
 
+<body>
 
+  <p>Перед скриптом...</p>
+
+  <script>
+    "use strict";
+    let gender = promt('Введите ваш пол');
+    let age = promt('Введите ваш возраст');
+    if (gender == 'мужской' && age < 65){
+        if(age < 60) {
+            if (age < 18){ 
+                alert('Вам работать ещё рано — учитесь');
+            }
+            else alert('Вам ещё работать и работать')
+        }
+        else('Скоро пенсия!') 
+    }
+
+    
+  </script>
+
+  <p>...После скрипта.</p>
+
+</body>
 
 </html>
