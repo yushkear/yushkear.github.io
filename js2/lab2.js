@@ -1,3 +1,3 @@
 function pow(x,y){
-    return 8;
+    return 8; //проверка спецификации
 }
