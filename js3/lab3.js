@@ -46,7 +46,7 @@ export  function camelize(str){
 // функция массива чисел фибоначи
 export function fibs(n){
     let arr = [];
-    for(i in n){
+    for(let i = 0; i < n; i++){
         arr.push(fib(i+1)); // для каждой итерации добавляет в массив i-е число фибоначи вплоть до n
     }
     return arr;
