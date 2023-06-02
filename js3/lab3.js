@@ -44,6 +44,6 @@ function camelize(str){
 
 //
 function fibs(n){
-    import{fib} from 'js2/lab2.js';
+    import{fib} from './lab2.js';
     return fib(n);
 }
