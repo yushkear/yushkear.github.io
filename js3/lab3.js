@@ -1,3 +1,4 @@
+//функция возврата дробной части числа
 function getDecimal(num){
     switch (num){
         case(num>=0):
