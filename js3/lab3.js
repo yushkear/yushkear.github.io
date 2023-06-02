@@ -50,5 +50,5 @@ export function fibs(n){
     for(i in n){
         arr.push(fib(i+1)); // для каждой итерации добавляет в массив i-е число фибоначи вплоть до n
     }
-    return fib(n);
+    return arr;
 }
