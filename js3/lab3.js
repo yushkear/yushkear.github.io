@@ -36,7 +36,7 @@ export  function truncate(str, maxlength){
 //функция преобразования строки
 export  function camelize(str){
     let strArr = str.split("-");
-   let strNew = ""
+    let strNew = "";
      for (let i = 0; i <= strArr.length - 1; i++){
       if (i == 0) {
          strNew = strArr[0];
