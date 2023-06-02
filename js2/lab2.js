@@ -22,7 +22,7 @@ function factorial(n){
 }
 
 //n-ое число фибоначи
-export function fib(n){
+function fib(n){
     a = BigInt(1);
     b=BigInt(1);
     if (n== BigInt(0))
