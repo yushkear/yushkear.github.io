@@ -24,7 +24,7 @@ export function ucFirst(str){
 //функция проверки строки
 export  function checkSpam(str){
     let lowerStr = str.toLowerCase(); // строка переводится в нижний регистр
-    return  lowerStr.includes("xxx") || str.includes("viagra");
+    return  lowerStr.includes("xxx") || LowerStr.includes("viagra");
 }
 
 //функция усечения строки
