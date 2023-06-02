@@ -3,7 +3,7 @@ import {fib} from './lab2.js';
 //функция возврата дробной части числа
 export  function getDecimal(num){
     let decimal = Math.abs(num);
-    return decimal - Math.floor(decimal);
+    return decimal - round(Math.floor(decimal));
     }
        
     
