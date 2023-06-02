@@ -49,7 +49,7 @@ export  function camelize(str){
 export function fibs(n){
     let arr = [];
     for(let i = 0; i < n; i++){
-        arr.push(fib(i+1)); // для каждой итерации добавляет в массив i-е число фибоначи вплоть до n
+        arr.push(fib(i)); // для каждой итерации добавляет в массив i-е число фибоначи вплоть до n
     }
     return arr;
 }
