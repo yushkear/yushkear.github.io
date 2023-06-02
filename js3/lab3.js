@@ -45,5 +45,9 @@ export  function camelize(str){
 //
 export  function fibs(n){
     import{fib} from './lab2.js';
+    let arr = [];
+    for(i in arr){
+        
+    }
     return fib(n);
 }
