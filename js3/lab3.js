@@ -8,7 +8,7 @@ export  function getDecimal(num){
        
     
 
-}
+
 
 //функция возврата строки с первым заглавным символом
 export function ucFirst(str){
