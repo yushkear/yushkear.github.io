@@ -1,3 +1,5 @@
+import {fib} from './lab2.js';
+
 //функция возврата дробной части числа
 export  function getDecimal(num){
     switch (num){
@@ -44,7 +46,7 @@ export  function camelize(str){
 
 //
 export  function fibs(n){
-    import {fib} from './lab2.js';
+
     let arr = [];
     for(i in n){
         arr.push(fib(i+1));
