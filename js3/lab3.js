@@ -55,9 +55,17 @@ export function fibs(n){
 
 
 export function arrReverseSorted(arr){
-return arr;
+    return arr.sort((a, b) => b - a);
 }
 
-export function unique(arr){
-    return arr;
-}
+export function unique(arr) {
+    let result = [];
+  
+    for (let str of arr) { //проверяем массив с результатом. Если элемент из arr есть в результате - игнорируем его
+      if (!result.includes(str)) { // иначе - включаем в массив
+        result.push(str);
+      }
+    }
+  
+    return result;
+  }
