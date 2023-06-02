@@ -47,11 +47,14 @@ export  function camelize(str){
 
 // функция массива чисел фибоначи
 export function fibs(n){
-    let arr = [];
-    for(let i = 0; i < n; i++){
-        arr.push(fib(i)); // для каждой итерации добавляет в массив i-е число фибоначи вплоть до n
-    }
-    return arr;
+    let strArr = str.split("-");
+    let strNew = ""
+      for (let i = 0; i <= strArr.length - 1; i++){
+       if (i == 0) {
+          strNew = strArr[0];
+       } else strNew += ucFirst(strArr[i]);
+       
+       } return strNew;
 }
 
 
