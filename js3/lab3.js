@@ -35,13 +35,14 @@ export  function truncate(str, maxlength){
 
 //функция преобразования строки
 export  function camelize(str){
-    return str
-    .split('-') // разбивает  на массив
-    .map(
-      // Переводит в верхний регистр первые буквы всех элементом массива за исключением первого
-      (word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)
-    )
-    .join(''); // соединяет
+    let strArr = str.split("-");
+   let strNew = ""
+     for (let i = 0; i <= strArr.length - 1; i++){
+      if (i == 0) {
+         strNew = strArr[0];
+      } else strNew += ucFirst(strArr[i]);
+      
+      } return strNew;
 
 }
 
