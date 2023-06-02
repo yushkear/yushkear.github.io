@@ -2,12 +2,8 @@ import {fib} from './lab2.js';
 
 //функция возврата дробной части числа
 export  function getDecimal(num){
-    let res = 0;
-    if(num >=0 ) {
-        return res = num - num.floor;
-    }
-    else{
-        return res = num - math.ceil(num);
+    let decimal = Math.abs(num);
+    return decimal - Math.floor(decimal);
     }
        
     
