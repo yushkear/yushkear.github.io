@@ -46,8 +46,8 @@ export  function camelize(str){
 export  function fibs(n){
     import{fib} from './lab2.js';
     let arr = [];
-    for(i in arr){
-        
+    for(i in n){
+        arr.push(fib(i+1));
     }
     return fib(n);
 }
