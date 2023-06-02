@@ -45,7 +45,7 @@ export  function camelize(str){
 }
 
 // функция массива чисел фибоначи
-export  function fibs(n){
+export function fibs(n){
 
     let arr = [];
     for(i in n){
