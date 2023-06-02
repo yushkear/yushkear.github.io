@@ -52,3 +52,12 @@ export function fibs(n){
     }
     return arr;
 }
+
+
+export function arrReverseSorted(arr){
+return arr;
+}
+
+export function unique(arr){
+    return arr;
+}
