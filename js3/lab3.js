@@ -2,14 +2,16 @@ import {fib} from './lab2.js';
 
 //функция возврата дробной части числа
 export  function getDecimal(num){
-    switch (num){
-        case(num>=0):
-        return num - math.floor(num); //Если число меньше нуля - вычитай потолок,
-        break;                        //Если больше - вычитай пол.
-        case(num<0):
-        return num - math.ceil(num);
-        break;
+    let res = 0;
+    if(num >=0 ) {
+        return res = num - num.floor;
     }
+    else{
+        return res = num - math.ceil(num);
+    }
+       
+    
+
 }
 
 //функция возврата строки с первым заглавным символом
