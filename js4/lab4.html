@@ -16,7 +16,7 @@
         let book1 = new Object(); // синтаксис "конструктор объекта"
         book1 = {
             title: "Руигат. Рождение",
-            pubYear: 2013,
+            pubYear: 2010,
             price: 2400,
             show: function () {
                 console.log(this.title);
@@ -26,7 +26,7 @@
         console.log(isEmpty(book1));
         let book2 = new Object();
         book2.title = 'Дюна';
-        book2.pubYear = 2023;
+        book2.pubYear = 1965;
         book2.price = 0;
         for (let i in book2) console.log(book2[i]);
         console.log(isEmpty(book2));

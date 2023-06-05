@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    "use strict"
+let obj = {
+    className: 'open menu'
+}
+
+obj.addClass = function addClass(cls) {
+    let arr = this.className.split(" ");
+    if (!arr.includes(cls)) {
+        arr.push(cls)
+    }
+    this.className = arr.join(" ");// присваеваем свойству объекта, новый список классов
+}
+
+obj.addClass('Муад\'диб'); // open menu Муад'Диб
+obj.addClass('герой фрименов'); // open menu Муад'Диб герой фрименов
+obj.addClass('open');  // без изменений 
+
+console.log(obj.className);
+
+obj.removeClass = function removeClass(cls) {
+    let arr = this.className.split(" ");
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == cls) {
+            arr.splice(i, 1);
+            i--;
+        }
+    }
+    obj.className = arr.join(' ');
+}
+
+obj.removeClass('Муад\'диб'); // без изменений
+obj.removeClass('герой фрименов'); // open menu Privet my frend
+obj.removeClass('open'); // menu Privet my frend
+
+console.log(obj.className);
+</script>
+</body>
+</html>
