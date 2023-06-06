@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+      <li><span>Животные - 9</span><ul>
+          <li><span>Млекопитающие - 4</span><ul>
+              <li><span>Коровы - 0</span></li>
+              <li><span>Ослы - 0</span></li>
+              <li><span>Собаки - 0</span></li>
+              <li><span>Тигры - 0</span></li>
+            </ul>
+          </li>
+          <li><span>Другие - 3</span><ul>
+              <li><span>Змеи - 0</span></li>
+              <li><span>Птицы - 0</span></li>
+              <li><span>Ящерицы - 0</span></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><span>Рыбы - 5</span><ul>
+          <li><span>Аквариумные - 2</span><ul>
+              <li><span>Гуппи - 0</span></li>
+              <li><span>Скалярии - 0</span></li>
+            </ul>
+  
+          </li>
+          <li><span>Морские - 1</span><ul>
+              <li><span>Морская форель - 0</span></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  
+    <script>
+  let lis = document.getElementsByTagName('li');
+  for (let i = 0; i < lis.length; i++) {
+    let nestedLis = lis[i].querySelectorAll('li').length;
+    let text = lis[i].firstChild.textContent.trim();
+    let span = document.createElement('span');
+    span.textContent = text + " - " + nestedLis;
+    lis[i].replaceChild(span, lis[i].firstChild);
+  }
+    </script>
+  </body>
+</html>
