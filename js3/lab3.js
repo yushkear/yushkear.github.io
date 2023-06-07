@@ -60,9 +60,11 @@ export function fibs(n){
 }
 
 
-export function arrReverseSorted(arr){
-    return arr.sort((a, b) => b - a);
-}
+export function arrReverseSorted(arr) {
+    return arr.slice().sort(function (a, b) { //slice() создает копию исходного массива, метод sort() сортирует новый массив в порядке убывания с помощью функции сравнения
+      return b - a;//принимает два аргумента a и b и возвращает результат вычисления b - a. Если результат вычисления отрицательный, то элемент a будет располагаться перед элементом b в массиве
+    });
+  }
 
 export function unique(arr) {
     let result = [];
