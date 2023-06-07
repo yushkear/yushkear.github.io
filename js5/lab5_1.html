@@ -5,23 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Получение элементов</title>
-</head>
-
-    <body>
-	<div>Пользователи:</div>
-	<ul>
-		<li>Дункан Айдахо</li>
-		<li>Суфир Хават</li>
-	</ul>
-	<!-- комментарий -->
-	<script>
-	"use strict";
-	let head = document.getElementsByTagName('head')[0];
-	let ul = document.getElementsByTagName('ul')[0];
-	let li = document.getElementsByTagName('li');
+	<body>
+		<div>Пользователи:</div>
+		<ul>
+			<li>Дункан Айдахо</li>
+			<li>Суфир Хават</li>
+		</ul>
+		<script>
+			"use strict";
+			console.log(document.head);
 	
-	</script>
-
-</body>
-
-</html>
+			let element = document.querySelectorAll('ul');
+			for (let elem of element) {
+				console.log(elem.innerHTML);
+			}
+	
+			let elements = document.querySelectorAll('li');
+			for (let elem of elements) {
+				console.log(elem.innerHTML);
+			}
+		</script>
+	</body>
+	
+	</html>
