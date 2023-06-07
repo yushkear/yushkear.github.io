@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lab7_3</title>
+</head>
+
+<body>
+	<textarea id="area" autofocus></textarea>
+	<div id="divv">Нажми Ctrl+E и введи текст...</div>
+
+	<script>
+        "use strict";
+        area.hidden = true;
+
+        document.onkeydown = function (e) {
+            if (e.ctrlKey && e.keyCode == '69') {
+                divv.hidden = true;
+                area.hidden = false;
+                area.focus()
+                area.innerHTML = divv.innerHTML;
+                return false;
+            }
+
+            if (e.ctrlKey && e.keyCode == '83') {
+                divv.hidden = false;
+                area.hidden = true;
+                divv.innerHTML = area.value;
+                return false;
+            } else if (e.keyCode == '27') {
+                divv.hidden = false;
+                area.hidden = true;
+            }
+        };
+
+    </script>
+</body>
+
+</html>

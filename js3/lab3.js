@@ -1,3 +1,4 @@
+"use strict";
 import {fib} from './lab2.js';
 
 //функция возврата дробной части числа

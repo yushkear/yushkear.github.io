@@ -40,13 +40,14 @@
     </ul>
   
     <script>
-  let lis = document.getElementsByTagName('li');
-  for (let i = 0; i < lis.length; i++) {
-    let nestedLis = lis[i].querySelectorAll('li').length;
-    let text = lis[i].firstChild.textContent.trim();
-    let span = document.createElement('span');
-    span.textContent = text + " - " + nestedLis;
-    lis[i].replaceChild(span, lis[i].firstChild);
+    "use strict";
+    let lis = document.getElementsByTagName('li');
+    for (let i = 0; i < lis.length; i++) {
+      let nestedLis = lis[i].querySelectorAll('li').length;
+      let text = lis[i].firstChild.textContent.trim();
+      let span = document.createElement('span');
+      span.textContent = text + " - " + nestedLis;
+      lis[i].replaceChild(span, lis[i].firstChild);
   }
     </script>
   </body>

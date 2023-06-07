@@ -1,4 +1,4 @@
-
+"use strict";
 //функция возведения числа x в степень n
 function pow(x, n){
     return x**n; //возвращается x в степени n
