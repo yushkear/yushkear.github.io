@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Задание 4</title>
+    <title>JS</title>
 </head>
 
 <body>
     <script>
-        'use strict';
-        let number = prompt('Введите число');
-        for (let i = 0; i <= number; i++) {
-            if (i % 2 > 0
-                && i % 3 > 0
-                && i % 5 > 0
-                && i % 7
-            ) alert(i);
+        "use strict"
+        let num = prompt("Введите число");
+        let k;
+        let lst = [];
+        for (let i = 2; i <= num; i++) {
+            k = 0
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) k += 1;
+            }
+            if (k == 0) {
+                lst.push(i)
+            }
         }
+        console.log("Все простые числа до " + num + ": " + lst);
     </script>
 </body>
 
