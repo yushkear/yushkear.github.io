@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Получение элементов</title>
-	<body>
-		<div>Пользователи:</div>
-		<ul>
-			<li>Дункан Айдахо</li>
-			<li>Суфир Хават</li>
-		</ul>
-		<script>
-			"use strict";
-			console.log(document.head);
-	
-			let element = document.querySelectorAll('ul');
-			for (let elem of element) {
-				console.log(elem.innerHTML);
-			}
-	
-			let elements = document.querySelectorAll('li');
-			for (let elem of elements) {
-				console.log(elem.innerHTML);
-			}
-		</script>
-	</body>
-	
-	</html>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Получение элементов</title>
+
+<body>
+	<div>Пользователи:</div>
+	<ul>
+		<li>Дункан Айдахо</li>
+		<li>Суфир Хават</li>
+	</ul>
+	<script>
+		"use strict";
+		console.log(document.head);
+
+		let element = document.querySelectorAll('ul');
+		for (let elem of element) {
+			console.log(elem.innerHTML);
+		}
+
+		let elements = document.querySelectorAll('li');
+		for (let elem of elements) {
+			console.log(elem.innerHTML);
+		}
+	</script>
+</body>
+
+</html>

@@ -1,32 +1,41 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-<title>Задание 2</title>
-    </head>
-    <body>
-        <script>
-            'use strict';
-            let count = prompt('Сколько видишь ворон?');
-            if (count > 10 && count < 20){
-                alert('На ветке сидит ' + count + ' ворон');
-            }else{
-                switch(count % 10){
-                    case 1: 
-                        alert('На ветке сидит ' + count + ' ворона');
-                        break;
 
-                    case 2:
-                    case 3: 
-                    case 4: 
-                        alert('На витке сиидят ' + count + ' вороны');
-                        break;
-                    
-                    case count > 5:
-                    case 0:
-                        alert('На ветке сидит ' + count + ' ворон');
-                        break;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS1.2</title>
+</head>
+
+<body>
+    <script>
+        "use strict"
+        let num = prompt("Введите число")
+        let b
+        if ((Math.floor((num % 100) / 10) == 1)) { b = 3 }
+        else {
+            {
+                if (num % 10 == 1) { b = 1 }
+                else {
+                    if (num % 10 == 2 || num % 10 == 3 || num % 10 == 4
+                    ) { b = 2 } else { b = 3 }
                 }
+            }
         }
-        </script>
-    </body>
+
+        switch (b) {
+            case 1:
+                alert("На ветке сидит" + " " + num + " " + "воронa");
+                break;
+            case 2:
+                alert("На ветке сидит" + " " + num + " " + "вороны");
+                break;
+            case 3:
+                alert("На ветке сидит" + " " + num + " " + "ворон");
+                break;
+        }      
+    </script>
+</body>
+
+</html>
